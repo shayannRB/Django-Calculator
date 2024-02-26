@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PYTHON CALCULATOR APP</title>
+</head>
+
+<body>
+
+
+<div align="center" border='solid'>
+
+<h1>CALCULATOR</h1>
+
+<form action="" method="POST">
+
+
+<label>Number One</label>
+<input type="text" placeholder="number1" name="number1" maxlength="100"><br><br>
+
+{% csrf_token %}
+
+<label>Number Two</label>
+<input type="text" placeholder="number1" name="number2"><br><br>
+
+<label>opperation</label>
+<select name="opperation">
+<option></option>
+<option name="*">*</option>
+<option name="+">+</option>
+<option name="-">-</option>
+<option name="/">/</option>
+</select><br><br><br>
+
+<input type="submit" name="submit">
+<input type="reset" name="reset">
+
+
+
+</div>
+</form>
+</body>
+</html>
